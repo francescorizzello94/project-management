@@ -1,4 +1,4 @@
-.Header-wrapper {
+.header-wrapper {
   background-color: blue;
   height: 100%;
   display: flex;
@@ -9,7 +9,7 @@
   color: white;
 }
 
-.Header-wrapper h1 {
+.header-wrapper h1 {
   height: 64px;
   pointer-events: none;
 }
