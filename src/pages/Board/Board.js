@@ -11,7 +11,7 @@ const lanes = [
 
 export const Board = () => {
 
-  const [data, loadData] = useState([]);
+  const [projects, loadProjects] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -19,10 +19,10 @@ export const Board = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const projects = await fetch();
+        const projects = await fetch('../../ db.json');
         const result = await projects.json();
         if (result) {
-          loadData(result);
+          loadProjects(result);
           setLoading(false);
         }
       }
@@ -42,7 +42,7 @@ export const Board = () => {
         <Lane
           key={lane.id}
           title={lane.title}
-          data={data
+          projects={projects
             .filter(
               (element) => element.lane === lane.id
             )}

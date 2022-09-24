@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "name": "Mental Health Form",
+      "lesson": "Sanitizing user input and working with forms",
+      "lane": 1
+    },
+    {
+      "id": 1,
+      "name": "Cognitive Tracker",
+      "lessons": "Working with ES6 classes and using the single-responsibility principle",
+      "lane": 1
+    },
+    {
+      "id": 2,
+      "name": "3D Playground",
+      "lesson": "3-D programming with Three.js and React-Three-Fiber, writing SPAs with react-router and debugging abandonware",
+      "lane": 4
+    },
+    {
+      "id": 3,
+      "name": "Philosophy of Time Travel",
+      "lesson": "Writing a responsive, mobile-first accessible website",
+      "lane": 4
+    },
+    {
+      "id": 4,
+      "name": "Accessible Hamburger Menu",
+      "lesson": "Designing a responsive, fully accessible navbar with drop-down menus",
+      "lane": 3
+    },
+    {
+      "id": 5,
+      "name": "Gotham NFT Collection",
+      "lesson": "Crafting a design-grade NFT collection",
+      "lane": 2
+    },
+    {
+      "id": 6,
+      "name": "Typescript Event Shopping Cart",
+      "lesson": "Applying best practices in using Typescript and React with a highly modular apporach",
+      "lane": 4
+    },
+    {
+      "id": 7,
+      "name": "Markdown Editor",
+      "lesson": "SOLID principles and chain-of-responsibility vistor-based behavioural pattern",
+      "lane": 4
+    },
+    {
+      "id": 8,
+      "name": "Berlin Text Adventure",
+      "lesson": "Programming a text-adventure in Python",
+      "lane": 2
+    },
+    {
+      "id": 9,
+      "name": "GitHub Profile Commits Fetcher",
+      "lesson": "Applying React best practices in an SPA",
+      "lane": 4
+    },
+    {
+      "id": 10,
+      "name": "Artsy Pong Clone",
+      "lesson": "Writing vectorial game logic in Javascript",
+      "lane": 2
+    }
+  ]
+}
