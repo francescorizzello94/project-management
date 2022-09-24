@@ -39,7 +39,14 @@ export const Board = () => {
   return (
     <div className='board-wrapper'>
       {lanes.map((lane) => (
-        <Lane key={lane.id} title={lane.title} />
+        <Lane
+          key={lane.id}
+          title={lane.title}
+          data={data
+            .filter(
+              (element) => element.lane === lane.id
+            )}
+        />
       ))}
     </div>
   )
