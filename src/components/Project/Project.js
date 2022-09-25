@@ -1,4 +1,4 @@
-import './Task.css';
+import './Project.css';
 
 export const Project = ({ name, lesson}) => {
   return (
