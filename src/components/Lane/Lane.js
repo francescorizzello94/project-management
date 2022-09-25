@@ -1,7 +1,7 @@
 import './Lane.css';
 import { Project } from '../Project/Project';
 
-export const Lane = ({ title, loading, error, projects }) => {
+export const Lane = ({ title, loading, error, projects, onDragStart }) => {
   return (
     <div className='lane-wrapper'>
       <h2>{title}</h2>
@@ -10,13 +10,13 @@ export const Lane = ({ title, loading, error, projects }) => {
           ||
           error
           ?
-  (
-          <span>
-            {
-              error
-              ||
-              'Loading...'
-            }
+          (
+            <span>
+              {
+                error
+                ||
+                'Loading...'
+              }
             </span>
           )
           :
@@ -27,6 +27,7 @@ export const Lane = ({ title, loading, error, projects }) => {
                 id={element.id}
                 name={element.name}
                 lesson={element.lesson}
+                onDragStart={onDragStart}
               />
             ))
           )

@@ -9,6 +9,10 @@ const lanes = [
   { id: 4, title: 'Completed' },
 ];
 
+function onDragStart(e, id) {
+  e.dataTransfer.setData('id', id);
+}
+
 export const Board = () => {
 
   const [projects, loading, error] = useDataFetch('http://localhost:3001/projects');
@@ -25,6 +29,7 @@ export const Board = () => {
             .filter(
               (element) => element.lane === lane.id
             )}
+          onDragStar={onDragStart}
         />
       ))}
     </div>
