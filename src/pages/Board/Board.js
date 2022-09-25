@@ -19,7 +19,7 @@ export const Board = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const projects = await fetch('../../ db.json');
+        const projects = await fetch('../../../db.json');
         const result = await projects.json();
         if (result) {
           loadProjects(result);
@@ -42,6 +42,8 @@ export const Board = () => {
         <Lane
           key={lane.id}
           title={lane.title}
+          loading={loading}
+          error={error}
           projects={projects
             .filter(
               (element) => element.lane === lane.id
