@@ -19,7 +19,7 @@ export const Board = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const projects = await fetch('../../../db.json');
+        const projects = await fetch('http://localhost:3001/projects');
         const result = await projects.json();
         if (result) {
           loadProjects(result);

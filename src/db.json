@@ -9,7 +9,7 @@
     {
       "id": 1,
       "name": "Cognitive Tracker",
-      "lessons": "Working with ES6 classes and using the single-responsibility principle",
+      "lesson": "Working with ES6 classes and using the single-responsibility principle",
       "lane": 1
     },
     {
