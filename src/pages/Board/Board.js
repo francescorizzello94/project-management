@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { Lane } from "../../components/Lane/Lane";
+import { useDataFetch } from "../../hooks/useDataFetch";
 import './Board.css';
 
 const lanes = [
@@ -11,30 +11,7 @@ const lanes = [
 
 export const Board = () => {
 
-  const [projects, loadProjects] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const projects = await fetch('http://localhost:3001/projects');
-        const result = await projects.json();
-        if (result) {
-          loadProjects(result);
-          setLoading(false);
-        }
-      }
-      catch (error) {
-        setLoading(false);
-        setError(error.message);
-      }
-    }
-    fetchData();
-  }, []);
-
-
+  const [projects, loading, error] = useDataFetch('http://localhost:3001/projects');
 
   return (
     <div className='board-wrapper'>
