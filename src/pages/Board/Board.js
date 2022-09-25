@@ -13,6 +13,10 @@ function onDragStart(e, id) {
   e.dataTransfer.setData('id', id);
 }
 
+function onDragOver(e) {
+  e.preventDefault();
+}
+
 export const Board = () => {
 
   const [projects, loading, error] = useDataFetch('http://localhost:3001/projects');
@@ -29,7 +33,8 @@ export const Board = () => {
             .filter(
               (element) => element.lane === lane.id
             )}
-          onDragStar={onDragStart}
+          onDragStart={onDragStart}
+          onDragOver={onDragOver}
         />
       ))}
     </div>

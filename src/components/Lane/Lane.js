@@ -1,9 +1,9 @@
 import './Lane.css';
 import { Project } from '../Project/Project';
 
-export const Lane = ({ title, loading, error, projects, onDragStart }) => {
+export const Lane = ({ title, loading, error, projects, onDragStart, onDragOver }) => {
   return (
-    <div className='lane-wrapper'>
+    <div className='lane-wrapper' onDragOver={onDragOver}>
       <h2>{title}</h2>
       {
         loading
