@@ -65,6 +65,12 @@
       "name": "Artsy Pong Clone",
       "lesson": "Writing vectorial game logic in Javascript",
       "lane": 2
+    },
+    {
+      "id": 11,
+      "name": "Project Management Interface",
+      "lesson": "Writing my own API endpoint and using the Drag-and-Drop API",
+      "lane": 4
     }
   ]
 }
