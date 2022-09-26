@@ -33,6 +33,9 @@ Modular code structure and single-responsibility oriented components
 <li>
 Drag-and-drop API
 </li>
+<li>
+Build your own endpoint with json-server
+</li>
 </ul>
 
 ## Feature to implement
