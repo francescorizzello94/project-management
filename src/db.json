@@ -71,6 +71,12 @@
       "name": "Project Management Interface",
       "lesson": "Writing my own API endpoint and using the Drag-and-Drop API",
       "lane": 4
+    },
+    {
+      "id": 12,
+      "name": "Stack Overflow Community Feed",
+      "lesson": "Using SSR (server-side rendering) through Next.js",
+      "lane": 2
     }
   ]
 }
